@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website title</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/components.css" rel="stylesheet">
+<link href="../css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="../css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="../css/custom.css" rel="stylesheet" type="text/css"/>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <br />
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-12">
+    <table class="table table-hover table-bordered">
+      <tbody>
+      <tr>
+        <th align="left" style="background-color: #f5f5f5;color:#4B8DF8;">交易方案</th>
+        <th style="text-align: center;background-color: #f5f5f5;">现状</th>
+        <th style="text-align: center;background-color: #f5f5f5;">方案一</th>
+        <th style="text-align: center;background-color: #f5f5f5;">方案二</th>
+        <th style="text-align: center;background-color: #f5f5f5;">方案三</th>
+      </tr>
+      <tr>
+        <th style="text-align: center;width: 120px;">
+            <div class="row">
+              <div class="col-sm-3">
+                <a onclick="showAndHideNum();"><i id="numIcon" class="glyphicon glyphicon-plus"></i></a>
+              </div>
+              <div class="col-sm-9">
+                数量
+              </div>
+            </div>
+            <script>
+                function showAndHideNum() {
+                    var icon = $('#numIcon');
+                    if(icon.attr('class') == 'glyphicon glyphicon-plus') {
+                        $('.numDiv').show();
+                        icon.attr('class','glyphicon glyphicon-minus');
+                    }else {
+                        $('.numDiv').hide();
+                        icon.attr('class','glyphicon glyphicon-plus');
+                    }
+                }
+            </script>
+
+        </th>
+        <th style="text-align: center;">—</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">1</th>
+        <th style="text-align: center;">1</th>
+      </tr>
+      <tr style="display:none;" class="numDiv">
+        <td style="text-align: center;" >购销</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr style="display:none;" class="numDiv">
+        <td style="text-align: center;">租赁</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr style="display:none;" class="numDiv">
+        <td style="text-align: center;">分享</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">1</td>
+      </tr>
+      </div>
+      <tr>
+        <th style="text-align: center;">
+            <div class="row">
+              <div class="col-sm-3">
+                <a onclick="showAndHideContractValue();"><i id="contractValueIcon" class="glyphicon glyphglyphicon glyphicon-plus"></i></a>
+              </div>
+              <div class="col-sm-9">
+                合同金额
+              </div>
+            </div>
+            <script>
+                function showAndHideContractValue() {
+                    var icon = $('#contractValueIcon');
+                    if(icon.attr('class') == 'glyphicon glyphglyphicon glyphicon-plus') {
+                        $('.contractValueDiv').show();
+                        icon.attr('class','glyphicon glyphglyphicon glyphicon-minus');
+                    }else {
+                        $('.contractValueDiv').hide();
+                        icon.attr('class','glyphicon glyphglyphicon glyphicon-plus');
+                    }
+                }
+            </script>
+        </th>
+        <th style="text-align: center;">—</th>
+        <th style="text-align: center;">380,000</th>
+        <th style="text-align: center;">80,000</th>
+        <th style="text-align: center;">35,000</th>
+      </tr>
+      <tr style="display:none;" class="contractValueDiv">
+        <td style="text-align: center;">购销</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">380,000</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr style="display:none;" class="contractValueDiv">
+        <td style="text-align: center;">租赁</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">80,000</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr style="display:none;" class="contractValueDiv">
+        <td style="text-align: center;">分享</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">35,000</td>
+      </tr>
+      <tr>
+        <th style="text-align: center;">
+            <div class="row">
+              <div class="col-sm-3">
+                <a onclick="showAndHideAnnualCost();"><i id="annualCostIcon" class="glyphicon glyphicon-plus"></i></a>
+              </div>
+              <div class="col-sm-9">
+                年度成本
+              </div>
+            </div>
+            <script>
+                function showAndHideAnnualCost() {
+                    var icon = $('#annualCostIcon');
+                    if(icon.attr('class') == 'glyphicon glyphicon-plus') {
+                        $('.annualCostDiv').show();
+                        icon.attr('class','glyphicon glyphicon-minus');
+                    }else {
+                        $('.annualCostDiv').hide();
+                        icon.attr('class','glyphicon glyphicon-plus');
+                    }
+                }
+            </script>
+        </th>
+        <th style="text-align: center;">—</th>
+        <th style="text-align: center;">59,280</th>
+        <th style="text-align: center;">80,000</th>
+        <th style="text-align: center;">35,000</th>
+      </tr>
+      <tr style="display:none;" class="annualCostDiv">
+        <td style="text-align: center;">购销</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">59,280</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr style="display:none;" class="annualCostDiv">
+        <td style="text-align: center;">租赁</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">80,000</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr style="display:none;" class="annualCostDiv">
+        <td style="text-align: center;">分享</td>
+        <td style="text-align: center;">—</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">35,000</td>
+      </tr>
+      <tr>
+        <th align="left" style="background-color: #f5f5f5;color: #4B8DF8;">交易后库存</th>
+        <th style="text-align: center;background-color: #f5f5f5;">现状</th>
+        <th style="text-align: center;background-color: #f5f5f5;">方案一</th>
+        <th style="text-align: center;background-color: #f5f5f5;">方案二</th>
+        <th style="text-align: center;background-color: #f5f5f5;"></th>
+      </tr>
+      <tr>
+        <th style="text-align: center;">
+            <div class="row">
+              <div class="col-sm-3">
+                <a onclick="showAndHideHoldings();"><i id="holdingsIcon" class="glyphicon glyphicon-plus"></i></a>
+              </div>
+              <div class="col-sm-9">
+                占有量
+              </div>
+            </div>
+            <script>
+                function showAndHideHoldings() {
+                    var icon = $('#holdingsIcon');
+                    if(icon.attr('class') == 'glyphicon glyphicon-plus') {
+                        $('.holdingsDiv').show();
+                        icon.attr('class','glyphicon glyphicon-minus');
+                    }else {
+                        $('.holdingsDiv').hide();
+                        icon.attr('class','glyphicon glyphicon-plus');
+                    }
+                }
+            </script>
+        </th>
+        <th style="text-align: center;">5</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">6</th>
+        <th style="text-align: center;">6</th>
+      </tr>
+      <tr style="display:none;" class="holdingsDiv">
+        <td style="text-align: center;">购销</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">5</td>
+        <td style="text-align: center;">5</td>
+      </tr>
+      <tr style="display:none;" class="holdingsDiv">
+        <td style="text-align: center;">租赁</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">1</td>
+        <td style="text-align: center;">0</td>
+      </tr>
+      <tr style="display:none;" class="holdingsDiv">
+        <td style="text-align: center;">分享</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">0</td>
+        <td style="text-align: center;">1</td>
+      </tr>
+
+      <tr>
+        <th style="text-align: center;">
+            <div class="row">
+                <div class="col-sm-offset-3">资产原值</div>
+            </div>
+        </th>
+        <th style="text-align: center;">1,168,950 </th>
+        <th style="text-align: center;">1,548,950 </th>
+        <th style="text-align: center;">1,168,950 </th>
+        <th style="text-align: center;">1,168,950 </th>
+      </tr>
+      <tr>
+          <th style="text-align: center;">
+              <div class="row">
+                <div class="col-sm-3">
+                  <a onclick="showAndHideAnnualCostImplement();"><i id="annualCostImplementIcon" class="glyphicon glyphicon-plus"></i></a>
+                </div>
+                <div class="col-sm-9">
+                  年度成本
+                </div>
+              </div>
+              <script>
+                  function showAndHideAnnualCostImplement() {
+                      var icon = $('#annualCostImplementIcon');
+                      if(icon.attr('class') == 'glyphicon glyphicon-plus') {
+                          $('.annualCostImplementDiv').show();
+                          icon.attr('class','glyphicon glyphicon-minus');
+                      }else {
+                          $('.annualCostImplementDiv').hide();
+                          icon.attr('class','glyphicon glyphicon-plus');
+                      }
+                  }
+              </script>
+          </th>
+          <th style="text-align: center;">116,895</th>
+          <th style="text-align: center;">176,175</th>
+          <th style="text-align: center;">196,895</th>
+          <th style="text-align: center;">151,895</th>
+        </tr>
+        <tr style="display:none;" class="annualCostImplementDiv">
+          <td style="text-align: center;">购销</td>
+          <td style="text-align: center;">116,895</td>
+          <td style="text-align: center;">176,175</td>
+          <td style="text-align: center;">116,895</td>
+          <td style="text-align: center;">151,895</td>
+        </tr>
+        <tr style="display:none;" class="annualCostImplementDiv">
+          <td style="text-align: center;">租赁</td>
+          <td style="text-align: center;">0</td>
+          <td style="text-align: center;">0</td>
+          <td style="text-align: center;">80,000</td>
+          <td style="text-align: center;">0</td>
+        </tr>
+        <tr style="display:none;" class="annualCostImplementDiv">
+          <td style="text-align: center;">分享</td>
+          <td style="text-align: center;">0</td>
+          <td style="text-align: center;">0</td>
+          <td style="text-align: center;">0</td>
+          <td style="text-align: center;">35,000</td>
+        </tr>
+      <tr>
+        <th style="text-align: center;">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a onclick="showAndHideServiceLevel();"><i id="serviceLevelIcon" class="glyphicon glyphicon-plus"></i></a>
+                </div>
+                <div class="col-sm-9">
+                    超额占有量
+                </div>
+            </div>
+            <script>
+                function showAndHideServiceLevel() {
+                    var icon = $('#serviceLevelIcon');
+                    if(icon.attr('class') == 'glyphicon glyphicon-plus') {
+                        $('.serviceLevelDiv').show();
+                        icon.attr('class','glyphicon glyphicon-minus');
+                    }else {
+                        $('.serviceLevelDiv').hide();
+                        icon.attr('class','glyphicon glyphicon-plus');
+                    }
+                }
+            </script>
+        </th>
+        <th style="text-align: center;">-1</th>
+        <th style="text-align: center;">0</th>
+        <th style="text-align: center;">0</th>
+        <th style="text-align: center;">0</th>
+      </tr>
+      <tr style="display:none;" class="serviceLevelDiv">
+        <td style="text-align: center;">库存下限</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">6</td>
+        <td style="text-align: center;">6</td>
+      </tr>
+      <tr style="display:none;" class="serviceLevelDiv">
+        <td style="text-align: center;">保障期</td>
+        <td style="text-align: center;">1年</td>
+        <td style="text-align: center;">1年</td>
+        <td style="text-align: center;">1年</td>
+        <td style="text-align: center;">1年</td>
+      </tr>
+      <tr style="display:none;" class="serviceLevelDiv">
+        <td style="text-align: center;">保障水平</td>
+        <td style="text-align: center;">95.83%</td>
+        <td style="text-align: center;">99.52%</td>
+        <td style="text-align: center;">99.52%</td>
+        <td style="text-align: center;">99.52%</td>
+      </tr>
+      <tr style="display:none;" class="serviceLevelDiv">
+        <td style="text-align: center;">基准保障水平</td>
+        <td style="text-align: center;">95%</td>
+        <td style="text-align: center;">95%</td>
+        <td style="text-align: center;">95%</td>
+        <td style="text-align: center;">95%</td>
+      </tr>
+      <tr style="display:none;" class="serviceLevelDiv">
+        <td style="text-align: center;">超额保障水平</td>
+        <td style="text-align: center;">0.83%</td>
+        <td style="text-align: center;">4.52%</td>
+        <td style="text-align: center;">4.52%</td>
+        <td style="text-align: center;">4.52%</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+</div>		   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
