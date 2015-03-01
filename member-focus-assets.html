@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website title</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom_1.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--sub-main-nav start-->
+     <nav class="navbar navbar-blue bg-blue sub-main-nav">
+       <div class="container">
+          <div class="navbar-header pull-left">
+             <a href="#" class="navbar-brand white-logo">
+                <img src="images/logo_white.png">
+             </a>
+          </div>
+         <ul class="nav navbar-nav pull-right">
+             <li ><a href="index.html">库享网首页</a></li>
+             <li class="active"><a href="customer-center-index.html">我的库享</a></li>
+             <li ><a href="notice-center"><span class="glyphicon glyphicon-bell"></span>通知</a></li>
+             <li ><a href="member-trade-list.html" >购物车</a></li>
+             <li ><a href="help-list.html" >帮助中心</a></li>
+          </ul>
+       </div>
+     </nav>
+     <div class="container">
+        <div class="row">
+           <!--fix left nav start-->
+           <div class="col-md-2">
+              <div class="left-nav">
+                 <ul class="nav nav-pills nav-stacked bg-grey bdr-all">
+                    
+                    <li  class="tit active"><span class="glyphicon glyphicon-home" ></span><span class="tit-txt">我的库享</span></li>
+                    <li><a href="customer-center-index.html"  >资产一览</a></li>
+                    <li class="divider"></li>
+                    <li class="tit"><span class="glyphicon glyphicon-user" ></span><span class="tit-txt">我的资产</span></li>
+                    <li ><a  href="add_project_step_0.html" >发布资产</a></li>
+                    <li><a  href="my-assets.html">资产列表</a></li>
+                    <li class="divider"></li>
+                    <li class="tit"><span class="glyphicon glyphicon-retweet" ></span><span class="tit-txt">我的交易</span></li>
+                    <li><a href="member-trade-list.html">买到的资产</a></li>
+                    <li><a href="member-sellout-list.html">卖出的资产</a></li>
+                    <li class="divider"></li>
+                    <li class="tit"><span class="glyphicon glyphicon-star" ></span><span class="tit-txt">我的关注</span></li>
+                    <li  class="active"><a href="member-focus-assets.html">关注的资产</a></li>
+                    <li><a href="member-focus-assets.html">关注的对手</a></li>
+                    <li class="divider"></li>
+                    <li  class="tit"><span class="glyphicon glyphicon-list-alt" ></span><span class="tit-txt">我的报告</span></li>
+                    <li><a href="#">电子对账单</a></li>
+                    <li ><a href="#">资产分析报告</a></li>
+                    <li class="divider"></li>
+                    <li class="tit"><span class="glyphicon glyphicon-user" ></span><span class="tit-txt">客户服务</span></li>
+                    <li><a href="#">咨询服务</a></li>
+                    <li class="divider"></li>
+                    <li class="tit"><span class="glyphicon glyphicon-road" ></span><span class="tit-txt">物流服务</span></li>
+                    <li><a href="my-order-list.html">发货</a></li>
+                    <li><a href="shipping-tools.html">物流工具</a></li>
+                    <li><a href="shipping-tools.html">我要寄快递</a></li>
+                    <li class="divider"></li>
+                    <li class="tit"><a href="#"  ><span class="glyphicon glyphicon-heart" ></span>保险服务</a></li>
+                    <li class="divider"></li>
+                    <li class="tit"><span class="glyphicon glyphicon-file" ></span><span class="tit-txt">基础信息</span></li>
+                    <li><a href="#">公司资料</a></li>
+                    <li><a href="#">分类</a></li>
+                    <li><a href="#">收货地址</a></li>
+                    <li><a href="#">网站提醒</a></li>
+                    
+                  </ul>
+              </div>
+           </div>
+           <!--fix left nav end-->
+           <!--right content start-->
+           <div class="col-md-10">
+             <!--search input start-->
+               <div class="form-inline">
+                 <div class="form-group mg-t-15">
+                    <input type="search" class="form-control pull-left mg-r-10" style="min-width:350px;" placeholder="资源名称关键字">
+                    <button type="button" class="btn btn-blue same-width-80">搜索</button>
+                 </div>
+              </div>
+             <!--search input end-->
+              <!--focus assets start -->
+              <div class="panel panel-default bg-grey bdr-all mg-t-15 asset-overview">
+                  <div class="panel-heading">
+                     <h4>关注的资产</h4>
+                  </div>
+                  <table width="100%" border="0" class="table table-bordered asset-overview-table bg-white">
+                      <tr>
+                      
+                        <th scope="col"></th>
+                        <th scope="col">资产描述</th>
+                        <th scope="col">交易数量</th>
+                        <th scope="col">最新交易</th>
+                        <th scope="col"></th>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>合成柴油机油[MOBILGARD 1 SHC (208L/DRUM)]</td>
+                        <td>12</td>
+                        <td>122</td>
+                        <td>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-link  dropdown-toggle" data-toggle="dropdown">
+                                    修改 <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">设置标准</a></li>
+                                    <li><a href="#">发布供应</a></li>
+                                    <li><a href="#">发布供应</a></li>
+                                  </ul>
+                                </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>压力变送器[1154GP9RAN0143]</td>
+                        <td>17</td>
+                        <td>19</td>
+                        <td>
+                            <div class="btn-group">
+                                  <button type="button" class="btn btn-link  dropdown-toggle" data-toggle="dropdown">
+                                    修改 <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">设置标准</a></li>
+                                    <li><a href="#">发布供应</a></li>
+                                    <li><a href="#">发布供应</a></li>
+                                  </ul>
+                                </div>
+                        </td>
+                      </tr>
+                      
+                    </table>
+
+              </div>
+              <!--focus assets end -->
+           </div>
+           <!--right content end-->
+        </div>
+        <div  class="row text-center gov-link">
+               <img src="images/gov-link.png">
+        </div>
+     </div>
+    
+        
+        <!--footer start-->
+        <footer class="footer bg-grey bdr_bottom bdr_top">
+           <div class="container">
+               <div class="aboutlinks">
+                  <p>
+                  按排行字母分类：
+                  <a href="http://#/product_A1.shtml" class="linesbg">A</a>
+                  <a href="http://#/product_B1.shtml" class="linesbg">B</a>
+                  <a href="http://#/product_C1.shtml" class="linesbg">C</a>
+                  <a href="http://#/product_D1.shtml" class="linesbg">D</a>
+                  <a href="http://#/product_E1.shtml" class="linesbg">E</a>
+                  <a href="http://#/product_F1.shtml" class="linesbg">F</a>
+                  <a href="http://#/product_G1.shtml" class="linesbg">G</a>
+                  <a href="http://#/product_H1.shtml" class="linesbg">H</a>
+                  <a href="http://#/product_I1.shtml" class="linesbg">I</a>
+                  <a href="http://#/product_J1.shtml" class="linesbg">J</a>
+                  <a href="http://#/product_K1.shtml" class="linesbg">K</a>
+                  <a href="http://#/product_L1.shtml" class="linesbg">L</a>
+                  <a href="http://#/product_M1.shtml" class="linesbg">M</a>
+                  <a href="http://#/product_N1.shtml" class="linesbg">N</a>
+                  <a href="http://#/product_O1.shtml" class="linesbg">O</a>
+                  <a href="http://#/product_P1.shtml" class="linesbg">P</a>
+                  <a href="http://#/product_Q1.shtml" class="linesbg">Q</a>
+                  <a href="http://#/product_R1.shtml" class="linesbg">R</a>
+                  <a href="http://#/product_S1.shtml" class="linesbg">S</a>
+                  <a href="http://#/product_T1.shtml" class="linesbg">T</a>
+                  <a href="http://#/product_U1.shtml" class="linesbg">U</a>
+                  <a href="http://#/product_V1.shtml" class="linesbg">V</a>
+                  <a href="http://#/product_W1.shtml" class="linesbg">W</a>
+                  <a href="http://#/product_X1.shtml" class="linesbg">X</a>
+                  <a href="http://#/product_Y1.shtml" class="linesbg">Y</a>
+                  <a href="http://#/product_Z1.shtml">Z</a>
+                  </p>
+                  <p>
+                  <a href="/aboutUs/index.html" class="linesbg" rel="nofollow">关于我们</a>
+                  <a href="/agent/success_stories.html" rel="nofollow" class="linesbg">成功案例</a>
+                  <a href="/media_att/media_attention.php" rel="nofollow" class="linesbg">媒体关注</a>
+                  <a href="/agent/index_agent.html" rel="nofollow" class="linesbg">代理加盟</a>
+                  <a href="/aboutUs/team_pic/Enterprise_culture.htm" rel="nofollow" class="linesbg">团队剪影</a>
+                  <a href="/aboutUs/jobs_index.html" rel="nofollow" class="linesbg">诚聘英才</a>
+                  <a href="/aboutUs/site_links.html" class="linesbg">友情链接</a>
+                  <a href="/aboutUs/contact_us.html" rel="nofollow">联系我们</a>
+                  </p>
+                  <p>
+                  <a href="/waimao.html" class="linesbg">外贸推广</a>
+                  <a href="/misc/interface/stat.php?from=1&amp;url=/html/e/cpc.html?utm_source=A1101-01-10" class="linesbg">企业推广</a>
+                  <a href="http://#/" class="linesbg">行业排行</a>
+                  <a href="http://cn.makepolo.com/" class="linesbg">企业名录</a>
+                  <a href="/product/" class="linesbg">产品回顾</a>
+                  <!--<a href="/gjc/" class="linesbg">每日热词</a>-->
+                  <a href="http://company.makepolo.com/" class="linesbg">企业大全</a>
+                  <a href="/help" rel="nofollow">帮助中心</a>
+                  </p>
+                  </div>
+               <div class="bot-logo text-center">
+                  <img src="images/bottom-link.png" alt="网站底部logo" title="网站底部logo">
+               </div>
+               <div class="bot-caption text-center">
+                  中国电子商务最具投资价值企业<br> 
+京ICP证070102号京公网安备1101085016号 京ICP备09078656号-7互联网药品信息服务资格证书编号：(京)-经营性-2011-0025
+               </div>
+           </div>
+        </footer>
+       <!--footer end--> 
+     
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
