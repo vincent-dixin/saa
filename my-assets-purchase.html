@@ -94,186 +94,49 @@
               <!--focus assets start -->
               <div class="panel panel-default bg-grey bdr-all mg-t-15 asset-overview">
                 <div class="panel-heading">
-                     <h4>我的资产</h4>
+                     <h4>购销明细 [汽轮机主齿轮-1100002047]</h4>
                   </div>
-                  <table width="100%" border="0" class="table table-bordered asset-overview-table table-hover bg-white">
-                      <tr class="bg-grey">
-                        <td></td>
-                        <td>资产编号</td>
-                        <td>资产名称</td>
-                        <td>占有类型</td>
-                        <td>库存量</td>
-                        <td>库存下限</td>
-                        <td>年度持有<br />成本</td>
-                        <td>累计持有<br />成本</td>
-                        <td>库存获得<br />成本</td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td name="step_1">1100002047</td>
-                        <td name="step_1">汽轮机主齿轮</td>
-                        <td>
-						<a href="javascript:void(0);" onclick="col_cosp()" class="btn btn-link" >
-							所有 <span id="step_1" class="glyphicon glyphicon-chevron-down" ></span>
-							</a></td>
-                        <td>3
-							<script>
-								var step1 = 1;
-								function col_cosp() {
-									if(step1) {
-										$("td[name='step_1']").attr("rowspan","3");
-										$("tr[name='step_1_dis']").attr("style","");
-										$("#step_1").attr("class","glyphicon glyphicon-chevron-up")
-										step1 = 0;
-									}else {
-										$("td[name='step_1']").attr("rowspan","1");
-										$("tr[name='step_1_dis']").attr("style","display:none");
-										$("#step_1").attr("class","glyphicon glyphicon-chevron-down")
-										step1 = 1;
-									}
-								}
-							</script>
-						</td>
-                        <td>2</td>
-                        <td>38,632</td>
-                        <td>88,076</td>
-                        <td>834,237</td>
-                        <td name="step_1">
-                                <a href="iframe.html" class="btn disabled btn-link">
-                                    交易 
-                                  </a>
-                        </td>
-                      </tr>
-                      <tr name="step_1_dis" style="display:none;">
-                        <td></td>
-                        <td>购销</td>
-                        <td>
-							<a href="my-assets-purchase.html">2</a>
-						</td>
-                        <td>--</td>
-                        <td>7,607</td>
-                        <td>57,051</td>
-                        <td>834,327</td>
-                      </tr>
-                      <tr name="step_1_dis" style="display:none;">
-                        <td></td>
-                        <td>分享</td>
-                        <td><a href="my-assets-share.html">1</a></td>
-                        <td>--</td>
-                        <td>31,025</td>
-                        <td>31,025</td>
-                        <td>0</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>1100001070</td>
-                        <td>东风康明斯柴油发电机组 50KW</td>
-                        <td>购销</td>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>10,326</td>
-                        <td>30,977</td>
-                        <td>1,154,338</td>
-                        <td>
-								<a href="iframe.html" class="btn btn-link">
-                                    交易 
-                                  </a>
-                            <!--    <div class="btn-group">
-                                  <button type="button" class="btn btn-link  dropdown-toggle" data-toggle="dropdown">
-                                    修改 <span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">设置标准</a></li>
-                                    <li><a href="#">发布供应</a></li>
-                                    <li><a href="#">发布供应</a></li>
-                                  </ul>
-                                </div> -->
-                        </td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td>1007015088</td>
-                        <td>一水氢氧化锂</td>
-                        <td>购销</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>3,480</td>
-                        <td>16,704</td>
-                        <td>150,075</td>
-                        <td>
-                                <a href="iframe.html" class="btn disabled btn-link">
-                                    交易 
-                                  </a>
-                        </td>
-                      </tr>
-                      
-                      
-                      <tr>
-                        <td></td>
-                        <td name="step_2">1100001071</td>
-                        <td name="step_2">发电机[BP 76]</td>
-                        <td>
-						<a href="javascript:void(0);" onclick="col1_cosp()" class="btn btn-link" >
-							所有 <span id="step_2" class="glyphicon glyphicon-chevron-down" ></span>
-							</a></td></td>
-                        <td>8
-							<script>
-								var step2 = 1;
-								function col1_cosp() {
-									if(step1) {
-										$("td[name='step_2']").attr("rowspan","4");
-										$("tr[name='step_2_dis']").attr("style","");
-										$("#step_2").attr("class","glyphicon glyphicon-chevron-up")
-										step1 = 0;
-									}else {
-										$("td[name='step_2']").attr("rowspan","1");
-										$("tr[name='step_2_dis']").attr("style","display:none");
-										$("#step_2").attr("class","glyphicon glyphicon-chevron-down")
-										step1 = 1;
-									}
-								}
-							</script></td>
-                        <td>8</td>
-                        <td>30,756</td>
-                        <td>48,769</td>
-                        <td>1,006,855</td>
-                        <td name="step_2">
-                                <a href="iframe.html" class="btn disabled btn-link">
-                                    交易 
-                                  </a>
-                        </td>
-                      </tr>
-                      <tr name="step_2_dis" style="display:none;">
-                        <td></td>
-                        <td>购销</td>
-                        <td>4</td>
-                        <td>--</td>
-                        <td>9,006</td>
-                        <td>27,019</td>
-                        <td>1,006,855</td>
-                      </tr>
-                      <tr name="step_2_dis" style="display:none;">
-                        <td></td>
-                        <td>租赁</td>
-                        <td>3</td>
-                        <td>--</td>
-                        <td>21,750</td>
-                        <td>21,750</td>
-                        <td>0</td>
-                      </tr>
-                      <tr name="step_2_dis" style="display:none;">
-                        <td></td>
-                        <td>分享</td>
-                        <td>1</td>
-                        <td>--</td>
-                        <td>15,000</td>
-                        <td>15,000</td>
-                        <td>0</td>
-                      </tr>
-                      
-                    </table>
-
+                <table  width="100%" border="0" class="table table-bordered asset-overview-table table-hover bg-white">
+                  <tr class="bg-grey">
+                    <td width="106">合同日期</td>
+                    <td width="107">合同编号</td>
+                    <td width="105">合同<br />数量</td>
+                    <td width="105">合同金额</td>
+                    <td width="106">批次编号</td>
+                    <td width="73">批次<br />数量</td>
+                    <td width="94">批次金额</td>
+                    <td width="101">保障期开始</td>
+                    <td width="101">保障期结束</td>
+                    <td width="73">运费</td>
+                    <td width="73">其他<br />费用</td>
+                  </tr>
+                  <tr>
+                    <td align="right" width="106">2014/4/17</td>
+                    <td align="right" width="107">3100005791</td>
+                    <td align="right">2</td>
+                    <td align="right" width="105">861,148 </td>
+                    <td align="right">2111290009</td>
+                    <td align="right">1</td>
+                    <td align="right" width="94">430,574 </td>
+                    <td align="right">2014/05/21</td>
+                    <td align="right">2034/05/21</td>
+                    <td align="right">0</td>
+                    <td align="right">0</td>
+                  </tr>
+                  <tr>
+                    <td align="right" width="106">2014/6/2</td>
+                    <td align="right" width="107">3100005791</td>
+                    <td align="right">2</td>
+                    <td align="right" width="105">861,148 </td>
+                    <td align="right">2111290010</td>
+                    <td align="right">1</td>
+                    <td align="right" width="94">430,574 </td>
+                    <td align="right">2014/08/03</td>
+                    <td align="right">2034/08/03</td>
+                    <td align="right">0</td>
+                    <td align="right">0</td>
+                  </tr>
+                </table>
               </div>
               <!--focus assets end -->
            </div>

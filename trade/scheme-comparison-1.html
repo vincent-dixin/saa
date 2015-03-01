@@ -12,7 +12,12 @@
 <link href="../css/plugins.css" rel="stylesheet" type="text/css"/>
 <link href="../css/layout.css" rel="stylesheet" type="text/css"/>
 <link href="../css/custom.css" rel="stylesheet" type="text/css"/>
-
+<style>
+body
+{
+	font-family:"微软雅黑";
+}
+</style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,46 +45,26 @@
                   <th style="vertical-align: middle;text-align: center;">资产编号</th>
                   <th style="vertical-align: middle;text-align: center;">资产名称</th>
                   <th style="vertical-align: middle;text-align: center;">占有类型</th>
-                  <th style="vertical-align: middle;text-align: center;">占有量</th>
-                  <th style="vertical-align: middle;text-align: center;">成本(当年)</th>
-                  <th style="vertical-align: middle;text-align: center;">成本(累计)</th>
-                  <th style="vertical-align: middle;text-align: center;">成本(原值)</th>
-                  <th style="vertical-align: middle;text-align: center;">保障水平</th>
+                  <th style="vertical-align: middle;text-align: center;">库存量</th>
+                  <th style="vertical-align: middle;text-align: center;">库存下限</th>
+                  <th style="vertical-align: middle;text-align: center;">年度持有成本</th>
+                  <th style="vertical-align: middle;text-align: center;">累计持有成本</th>
+                  <th style="vertical-align: middle;text-align: center;">获得成本</th>
                 </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td rowspan="4" style="text-align: center;">1100002047</td>
-                    <td rowspan="4">汽轮机主齿轮</td>
+                    <td rowspan="4" style="text-align: center;">1100001070</td>
+                    <td rowspan="4">东风康明斯柴油发电机组 50KW汽轮机主齿轮</td>
                     <td style="text-align: center;">购销</td>
-                    <td style="text-align: center;"><a href="">2</a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="7606.80733333333" ></fmt:formatNumber></a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="57051.055" ></fmt:formatNumber></a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="834237.125" ></fmt:formatNumber></a></td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">>38,632</td>
+                    <td style="text-align: center;">
+                      88,076</td>
                     <td rowspan="4" style="text-align: center;">
-                      <a href="javascript:;">99.99%</a>
+                      834,237
                     </td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: center;">租赁</td>
-                    <td style="text-align: center;"><a href="">0</a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="0" ></fmt:formatNumber></a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="0" ></fmt:formatNumber></a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="0" ></fmt:formatNumber></a></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: center;">分享</td>
-                    <td style="text-align: center;"><a href="">1</a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="31025" ></fmt:formatNumber></a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="31025" ></fmt:formatNumber></a></td>
-                    <td style="text-align: center;"><a href=""><fmt:formatNumber pattern="###,###,###,##0.00#" value="0" ></fmt:formatNumber></a></td>
-                  </tr>
-                  <tr>
-                    <td style="text-align: center;">小计</td>
-                    <td style="text-align: center;"><span class="label label-info">3</span></td>
-                    <td style="text-align: center;"><span class="label label-success"><fmt:formatNumber pattern="###,###,###,##0.00#" value="38632" ></fmt:formatNumber></span></td>
-                    <td style="text-align: center;"><span class="label label-success"><fmt:formatNumber pattern="###,###,###,##0.00#" value="88076" ></fmt:formatNumber></span></td>
-                    <td style="text-align: center;"><span class="label label-success"><fmt:formatNumber pattern="###,###,###,##0.00#" value="834237" ></fmt:formatNumber></span></td>
                   </tr>
                 </tbody>
               </table>
@@ -93,7 +78,7 @@
   <div class="col-md-12">
     <div class="tabbable tabbable-custom">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#tab_2" data-toggle="tab">备交易方案一</a></li>
+        <li class="active"><a href="#tab_2" data-toggle="tab">交易方案一</a></li>
       </ul>
       <div class="tab-content">
         <div class="tab-pane active" id="tab_2">
@@ -136,7 +121,7 @@
                     <th style="vertical-align: middle;text-align: center;"> 1 </th>
                     <td style="vertical-align: middle;text-align: center;"></td>
                     <td style="vertical-align: middle;text-align: center;"></td>
-                    <th style="vertical-align: middle;text-align: center;"> 460,000 </th>
+                    <th style="vertical-align: middle;text-align: center;"> 380,000 </th>
                     <td style="vertical-align: middle;text-align: center;"></td>
                   </tr>
                 </tfoot>
@@ -192,10 +177,10 @@
                 <input type="text"  size="16" value="1"/>
               </td>
               <td style="vertical-align: middle;text-align: center;">
-                <input type="text"  size="16" readonly  value="01/01/2015" />
+                <input type="text"  size="16" readonly  value="2015/01/01" />
               </td>
               <td style="vertical-align: middle;text-align: center;">
-                <input type="text"  size="16" readonly value="31/12/2015" />
+                <input type="text"  size="16" readonly value="2015/12/31" />
               </td>
               <td style="vertical-align: middle;text-align: center;"><input type="text"  size="16" value="80,000" /></td>
               <td style="vertical-align: middle;text-align: center;"><input type="text"  size="16" value="" /></td>
@@ -279,10 +264,10 @@
                 <input type="text" size="16" value="1"/>
               </td>
               <td style="vertical-align: middle;text-align: center;">
-                <input type="text" size="16" readonly value="01/01/2015" />
+                <input type="text" size="16" readonly value="2015/01/01" />
               </td>
               <td style="vertical-align: middle;text-align: center;">
-                <input type="text" size="16" readonly value="31/12/2015" />
+                <input type="text" size="16" readonly value="2015/12/31" />
               </td>
               <td style="vertical-align: middle;text-align: center;"><input type="text" size="16" value="35,000" /></td>
               <td style="vertical-align: middle;text-align: center;"><input type="text" size="16" value="转让价格380000" /></td>
