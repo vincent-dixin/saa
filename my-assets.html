@@ -93,7 +93,7 @@
              <!--search input end-->
               <!--focus assets start -->
               <div class="panel panel-default bg-grey bdr-all mg-t-15 asset-overview">
-                  <div class="panel-heading">
+                <div class="panel-heading">
                      <h4>我的资产</h4>
                   </div>
                   <table width="100%" border="0" class="table table-bordered asset-overview-table table-hover bg-white">
@@ -101,39 +101,88 @@
                         <td></td>
                         <td>资产编号</td>
                         <td>资产名称</td>
-                        <td>库存类型</td>
+                        <td>占有<br />类型</td>
+                        <td>入</td>
+                        <td>出</td>
                         <td>库存量</td>
-                        <td>库存下限</td>
-                        <td>年度持有成本</td>
-                        <td>库存获得成本</td>
+                        <td>库存<br />下限</td>
+                        <td>年度持有<br />成本</td>
+                        <td>累计持有<br />成本</td>
+                        <td>库存获得<br />成本</td>
                         <td></td>
                       </tr>
                       <tr>
                         <td></td>
-                        <td>1050300501</td>
-                        <td>90/+10</td>
-                        <td>1,200,000</td>
-                        <td>7%(84,000)/14,000</td>
-                        <td>+133,340</td>
-                        <td>95.99%</td>
-                        <td>-4%(99.99%)</td>
-                        <td>
-                                <a href="iframe.html" class="btn btn-primary">
+                        <td name="step_1">1100002047</td>
+                        <td name="step_1">汽轮机主齿轮</td>
+                        <td>所有</td>
+                        <td><a href="javascript:void(0);" onclick="col_cosp()" >4</a>
+							<script>
+								var step1 = 1;
+								function col_cosp() {
+									if(step1) {
+										$("td[name='step_1']").attr("rowspan","3");
+										$("tr[name='step_1_dis']").attr("style","");
+										step1 = 0;
+									}else {
+										$("td[name='step_1']").attr("rowspan","1");
+										$("tr[name='step_1_dis']").attr("style","display:none");
+										step1 = 1;
+									}
+								}
+							</script>
+						</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>38,632</td>
+                        <td>88,076</td>
+                        <td>834,237</td>
+                        <td name="step_1">
+                                <a href="iframe.html" class="btn disabled btn-link">
                                     交易 
                                   </a>
                         </td>
                       </tr>
+                      <tr name="step_1_dis" style="display:none;">
+                        <td></td>
+                        <td>购销</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>--</td>
+                        <td>7,607</td>
+                        <td>57,051</td>
+                        <td>834,327</td>
+                      </tr>
+                      <tr name="step_1_dis" style="display:none;">
+                        <td></td>
+                        <td>分享</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>--</td>
+                        <td>31,025</td>
+                        <td>31,025</td>
+                        <td>0</td>
+                      </tr>
                       <tr>
                         <td></td>
-                        <td>1050300501</td>
-                        <td>90/+10</td>
-                        <td>1,200,000</td>
-                        <td>7%(84,000)/14,000</td>
-                        <td>+133,340</td>
-                        <td>95.99%</td>
-                        <td>-4%(99.99%)</td>
+                        <td>1100001070</td>
+                        <td>东风康明斯柴油发电机组 50KW</td>
+                        <td>购销</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>10,326</td>
+                        <td>30,977</td>
+                        <td>1,154,338</td>
                         <td>
-                                <div class="btn-group">
+								<a href="iframe.html" class="btn btn-link">
+                                    交易 
+                                  </a>
+                            <!--    <div class="btn-group">
                                   <button type="button" class="btn btn-link  dropdown-toggle" data-toggle="dropdown">
                                     修改 <span class="caret"></span>
                                   </button>
@@ -142,52 +191,93 @@
                                     <li><a href="#">发布供应</a></li>
                                     <li><a href="#">发布供应</a></li>
                                   </ul>
-                                </div>
+                                </div> -->
                         </td>
                       </tr>
                       <tr>
                         <td></td>
-                        <td>1050300501</td>
-                        <td>90/+10</td>
-                        <td>1,200,000</td>
-                        <td>7%(84,000)/14,000</td>
-                        <td>+133,340</td>
-                        <td>95.99%</td>
-                        <td>-4%(99.99%)</td>
+                        <td>1007015088</td>
+                        <td>一水氢氧化锂</td>
+                        <td>购销</td>
+                        <td>25</td>
+                        <td>0</td>
+                        <td>25</td>
+                        <td>20</td>
+                        <td>3,480</td>
+                        <td>16,704</td>
+                        <td>150,075</td>
                         <td>
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-link  dropdown-toggle" data-toggle="dropdown">
-                                    修改 <span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">设置标准</a></li>
-                                    <li><a href="#">发布供应</a></li>
-                                    <li><a href="#">发布供应</a></li>
-                                  </ul>
-                                </div>
+                                <a href="iframe.html" class="btn disabled btn-link">
+                                    交易 
+                                  </a>
                         </td>
                       </tr>
+                      
+                      
                       <tr>
                         <td></td>
-                        <td>1050300501</td>
-                        <td>90/+10</td>
-                        <td>1,200,000</td>
-                        <td>7%(84,000)/14,000</td>
-                        <td>+133,340</td>
-                        <td>95.99%</td>
-                        <td>-4%(99.99%)</td>
-                        <td>
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-link  dropdown-toggle" data-toggle="dropdown">
-                                    修改 <span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">设置标准</a></li>
-                                    <li><a href="#">发布供应</a></li>
-                                    <li><a href="#">发布供应</a></li>
-                                  </ul>
-                                </div>
+                        <td name="step_2">1100001071</td>
+                        <td name="step_2">发电机[BP 76]</td>
+                        <td>所有</td>
+                        <td><a href="javascript:void(0);" onclick="col1_cosp()" >8</a>
+							<script>
+								var step2 = 1;
+								function col1_cosp() {
+									if(step1) {
+										$("td[name='step_2']").attr("rowspan","4");
+										$("tr[name='step_2_dis']").attr("style","");
+										step1 = 0;
+									}else {
+										$("td[name='step_2']").attr("rowspan","1");
+										$("tr[name='step_2_dis']").attr("style","display:none");
+										step1 = 1;
+									}
+								}
+							</script></td>
+                        <td>1</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>30,756</td>
+                        <td>48,769</td>
+                        <td>1,006,855</td>
+                        <td name="step_2">
+                                <a href="iframe.html" class="btn disabled btn-link">
+                                    交易 
+                                  </a>
                         </td>
+                      </tr>
+                      <tr name="step_2_dis" style="display:none;">
+                        <td></td>
+                        <td>购销</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>--</td>
+                        <td>9,006</td>
+                        <td>27,019</td>
+                        <td>1,006,855</td>
+                      </tr>
+                      <tr name="step_2_dis" style="display:none;">
+                        <td></td>
+                        <td>租赁</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>--</td>
+                        <td>21,750</td>
+                        <td>21,750</td>
+                        <td>0</td>
+                      </tr>
+                      <tr name="step_2_dis" style="display:none;">
+                        <td></td>
+                        <td>分享</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>--</td>
+                        <td>15,000</td>
+                        <td>15,000</td>
+                        <td>0</td>
                       </tr>
                       
                     </table>
@@ -269,7 +359,7 @@
        <!--footer end--> 
      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
