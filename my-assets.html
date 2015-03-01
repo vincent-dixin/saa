@@ -87,7 +87,7 @@
                <div class="form-inline">
                  <div class="form-group mg-t-15">
                     <input type="search" class="form-control pull-left mg-r-10" style="min-width:350px;" placeholder="资源名称关键字">
-                    <button type="button" class="btn btn-primary same-width-80">搜索</button>
+                    <button type="button" class="btn btn-blue same-width-80">搜索</button>
                  </div>
               </div>
              <!--search input end-->
@@ -99,13 +99,13 @@
                   <table width="100%" border="0" class="table table-bordered asset-overview-table table-hover bg-white">
                       <tr class="bg-grey">
                         <td></td>
-                        <td>资产编号</td>
-                        <td>资产名称</td>
-                        <td>库存类型</td>
-                        <td>库存量</td>
-                        <td>库存下限</td>
+                        <td>编号</td>
+                        <td>数量</td>
+                        <td>采购成本</td>
                         <td>年度持有成本</td>
-                        <td>库存获得成本</td>
+                        <td>标准成本（差）</td>
+                        <td>保障水平</td>
+                        <td>保障水平（差）</td>
                         <td></td>
                       </tr>
                       <tr>
@@ -118,9 +118,16 @@
                         <td>95.99%</td>
                         <td>-4%(99.99%)</td>
                         <td>
-                                <a href="iframe.html" class="btn btn-primary">
-                                    交易 
-                                  </a>
+                                <div class="btn-group">
+                                  <button type="button" class="btn btn-link  dropdown-toggle" data-toggle="dropdown">
+                                    修改 <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">设置标准</a></li>
+                                    <li><a href="#">发布供应</a></li>
+                                    <li><a href="#">发布供应</a></li>
+                                  </ul>
+                                </div>
                         </td>
                       </tr>
                       <tr>
